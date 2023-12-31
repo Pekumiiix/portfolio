@@ -646,10 +646,6 @@ video {
   display: flex;
 }
 
-.hidden{
-  display: none;
-}
-
 * {
   padding: 0;
   margin: 0;
@@ -763,8 +759,8 @@ nav{
   display: none;
 }
 
-.menu-btn {
-  display: none
+.nav-right .menu-btn{
+  display: none;
 }
 
 .menu{

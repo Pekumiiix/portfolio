@@ -61,9 +61,7 @@ nav {
     @apply hidden
 }
 
-.menu-btn {
-    display: none;
-
+.nav-right .menu-btn {
     @apply hidden
 }
 

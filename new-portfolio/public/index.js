@@ -1,9 +1,3 @@
-document.querySelector('.resume').addEventListener('click', () => {
-    var pdfPath = 'img/Resume.pdf'
-    
-    window.open(pdfPath, '_blank')
-})
-
 function reachOut() {
     const reachOutButtons = document.querySelectorAll('.email-button')
 

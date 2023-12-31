@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import './media.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    @apply bg-myWhite transition-all
+
+    dark:bg-myBlack
+}
+
+header {
+    @apply h-[500px] w-[100%] flex flex-col items-center bg-myWhite border-b border-myBlack
+
+    dark:bg-myBlack dark:border-myWhite
+}
+
+nav {
+    @apply w-[100%] h-[80px] flex items-center justify-between border-b border-myBlack
+
+    dark:bg-myBlack dark:border-myWhite
+}
+
+.nav-left, .nav-right {
+    @apply flex items-center w-fit h-fit ml-5 gap-2
+}
+
+.nav-left {
+    @apply ml-5 gap-2
+}
+
+.nav-left img {
+    @apply w-[50px] h-[50px]
+}
+
+.nav-left p, .nav-right a, .nav-right p, .menu-btn, .light-md {
+    @apply text-myBlack font-bold text-base leading-6 no-underline 
+
+    dark:text-myWhite
+}
+
+.nav-right {
+    @apply gap-5 mr-5
+}
+
+.nav-right a, .nav-right p {
+    @apply italic flex items-center gap-2 cursor-default
+
+    hover:not-italic
+}
+
+.nav-right .dark-md {
+    @apply hidden
+}
+
+.menu-btn {
+    display: none;
+}
+
+.menu {
+    @apply hidden mr-5 mt-[90px] w-[70%] h-fit flex-col gap-2 items-center absolute right-0 rounded-lg bg-myBlack
+
+    dark:bg-myWhite
+}
+
+.menu a, .menu p {
+    @apply flex items-center gap-2 cursor-default w-[90%] p-[5px] rounded-md
+
+   text-myWhite font-bold text-base leading-6 no-underline 
+
+   active:opacity-80 active:border active:border-myWhite
+
+ dark:text-myBlack dark:active:border-myWhite
+}
+
+.keep {
+    @apply hidden
+}
+
+.show {
+    @apply flex
+}
+
+.details-ctn {
+    @apply flex flex-wrap w-fit h-fit gap-[70px] items-center justify-center mt-[100px]
+}
+
+.first-det-ctn, .second-det-ctn {
+    @apply flex flex-col h-fit gap-3
+}
+
+.first-det-ctn {
+    @apply w-[35%]
+}
+
+.first-det-ctn p, .second-det-ctn p {
+    @apply text-myBlack w-fit
+
+    dark:text-myWhite
+}
+
+.work-status {
+    @apply font-bold text-base flex items-center gap-2
+}
+
+.work-status span {
+    @apply bg-darkGreen h-3 w-3 rounded-[50%] animate-ping
+}
+
+.greetings {
+    @apply font-bold text-2xl
+}
+
+.my-job {
+    @apply text-xl font-medium leading-8
+}
+
+.second-det-ctn {
+    @apply w-[40%]
+}
+
+.experience {
+    @apply text-lg leading-7 font-normal
+}
+
+.second-det-ctn button {
+    @apply bg-myBlack flex items-center justify-center p-3 rounded-xl w-fit text-base font-bold text-myWhite
+
+    dark:bg-myWhite dark:text-myBlack
+
+    hover:opacity-80 active:opacity-80
+}
+
+main {
+    @apply flex flex-col items-center justify-center h-fit border-b border-myBlack
+
+    dark:border-myWhite
+}
+
+.projects {
+    @apply w-[70%] h-fit flex flex-col gap-7 mb-[150px] mt-[120px]
+}
+
+.project-headline {
+    @apply w-fit h-fit text-3xl text-myBlack font-bold
+
+    dark:text-myWhite
+}
+
+.project-card-ctn {
+    @apply flex flex-wrap gap-[4%] w-[100%] h-[fit]
+}
+
+.project-card {
+    @apply w-[48%] h-fit flex flex-col relative gap-4
+}
+
+.img-ctn {
+    @apply w-[100%] h-[375px] flex items-center justify-center bg-myPurple
+}
+
+.img-ctn img {
+    @apply w-[90%] h-[60%]
+}
+
+.img-ctn .hello {
+    @apply h-auto
+}
+
+.card-det-ctn {
+    @apply w-[100%] flex flex-col h-fit gap-5
+}
+
+.tag-ctn {
+    @apply w-fit h-fit flex gap-3 flex-wrap
+}
+
+.tag-ctn p, .link, .see-more, .github {
+    @apply px-3 py-[6px] flex items-center justify-center text-myWhite rounded text-xs font-semibold cursor-default
+
+    hover:opacity-70
+}
+
+.html {
+    @apply bg-myBrown
+}
+
+.css {
+    @apply bg-myBlue
+}
+
+.javascript {
+    @apply bg-myGreen
+}
+
+.link {
+    @apply bg-blue-600
+}
+
+.github {
+    @apply bg-slate-700
+}
+
+.project-det-ctn {
+    @apply w-[100%] flex flex-col gap-2
+}
+
+.project-det-ctn p {
+    @apply text-myBlack
+
+    dark:text-myWhite
+}
+
+.project-name {
+    @apply text-xl font-bold 
+}
+
+.project-description {
+    @apply w-[100%] h-fit text-base leading-6 opacity-80
+}
+
+.see-more {
+    @apply bg-purple-700 w-fit no-underline
+}
+
+.appreciation {
+    @apply w-[100%] h-[400px] border-b border-myBlack flex flex-col justify-center gap-4
+
+    dark:border-myWhite
+}
+
+.appreciation-text {
+    @apply w-[70%] h-fit text-myBlack text-3xl font-bold leading-[50px] ml-[15%]
+
+    dark:text-myWhite
+}
+
+.link-ctn {
+    @apply h-fit w-fit gap-8 flex text-myBlack ml-[15%]
+
+    dark:text-myWhite
+}
+
+.link-ctn a, .link-ctn p {
+    @apply no-underline italic font-semibold flex gap-2 items-center cursor-default
+
+    hover:not-italic
+}
+
+footer {
+    @apply w-[70%] items-center flex justify-between h-[90px] ml-[15%]
+}
+
+.footer-left {
+    @apply text-myBlack text-sm leading-6
+
+    dark:text-myWhite
+}
+
+.icon-ctn {
+    @apply flex items-center gap-3
+}
+
+.icon-ctn a, .icon-ctn p {
+    @apply p-2 bg-myBlack items-center flex rounded-[50%] cursor-default
+}
+
+.icon-ctn a img, .icon-ctn p img {
+    @apply w-5 h-5
+}

@@ -1,0 +1,73 @@
+@media screen and (max-width: 1024px) {
+    main .projects, body footer {
+        @apply w-[85%]
+    }
+    
+    body footer {
+        @apply ml-[7.5%]
+    }
+}
+
+@media screen and (max-width: 540px) {
+    body header {
+        @apply h-fit
+    }
+
+    nav .nav-right a, nav .nav-right p{
+        @apply hidden
+    }
+
+    .nav-right .menu-btn {
+        @apply flex
+    }
+
+    header .details-ctn {
+        @apply mt-[75px] mb-[75px] gap-[40px]
+    }
+
+    .details-ctn .first-det-ctn, .details-ctn .second-det-ctn {
+        @apply w-[90%]
+    }
+
+    main .projects {
+        @apply w-[90%]
+    }
+
+    .project-card-ctn .project-card {
+        @apply w-[100%] mb-10
+    }
+
+    .appreciation .appreciation-text {
+        @apply w-[90%] ml-[5%]
+    }
+
+    .appreciation .link-ctn {
+        @apply ml-[5%]
+    }
+
+    @media screen and (max-width: 350px) {
+        body footer {
+            @apply flex-col items-stretch gap-3 h-fit
+        }
+
+        body .appreciation {
+            @apply h-fit
+        }
+
+        .appreciation .appreciation-text {
+            @apply mt-7
+        }
+
+        .appreciation .link-ctn {
+            @apply mb-7
+        } 
+
+        footer .footer-left {
+            @apply mt-3
+        }
+
+        footer .icon-ctn {
+            @apply mb-3
+        }
+    }
+}

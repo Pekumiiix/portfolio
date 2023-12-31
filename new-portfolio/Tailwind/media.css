@@ -17,7 +17,7 @@
         @apply hidden
     }
 
-    .nav-right .menu-btn {
+    nav .nav-right .menu-btn {
         @apply flex
     }
 

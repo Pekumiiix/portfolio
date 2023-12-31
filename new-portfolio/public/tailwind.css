@@ -20,7 +20,7 @@
     display: none;
   }
 
-  .nav-right .menu-btn{
+  nav .nav-right .menu-btn{
     display: flex;
   }
 

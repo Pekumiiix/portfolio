@@ -646,6 +646,10 @@ video {
   display: flex;
 }
 
+.hidden{
+  display: none;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -760,7 +764,7 @@ nav{
 }
 
 .menu-btn {
-  display: none;
+  display: none
 }
 
 .menu{
@@ -1129,6 +1133,8 @@ main{
   width: fit-content;
   --tw-bg-opacity: 1;
   background-color: rgb(126 34 206 / var(--tw-bg-opacity));
+  font-size: 1rem;
+  line-height: 1.5rem;
   text-decoration-line: none;
 }
 

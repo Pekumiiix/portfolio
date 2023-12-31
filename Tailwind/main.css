@@ -63,6 +63,8 @@ nav {
 
 .menu-btn {
     display: none;
+
+    @apply hidden
 }
 
 .menu {
@@ -228,7 +230,7 @@ main {
 }
 
 .see-more {
-    @apply bg-purple-700 w-fit no-underline
+    @apply bg-purple-700 w-fit no-underline text-base
 }
 
 .appreciation {

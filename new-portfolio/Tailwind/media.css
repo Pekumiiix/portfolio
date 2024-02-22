@@ -29,6 +29,10 @@
         @apply w-[90%]
     }
 
+    .tech-stacks .stack-ctn p {
+        @apply text-xl
+    }
+
     main .projects {
         @apply w-[90%]
     }

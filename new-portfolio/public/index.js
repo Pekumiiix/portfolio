@@ -12,7 +12,7 @@ function reachOut() {
     })
 }
 
-reachOut()
+//reachOut()
 
 function toogleMenu() {
     const menuButton = document.querySelector('.menu-btn')

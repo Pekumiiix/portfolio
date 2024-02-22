@@ -145,6 +145,28 @@ main {
     dark:border-myWhite
 }
 
+.tech-stacks {
+    @apply w-[100%] h-fit py-9 border-b border-myBlack overflow-hidden whitespace-nowrap
+
+    dark:border-myWhite
+}
+
+.stack-ctn {
+    animation: slideToLeft 5s infinite linear;
+
+    @apply inline-flex h-fit pr-9
+}
+
+.stack-ctn p {
+    @apply w-fit flex items-center mr-24 gap-2 text-myBlack text-3xl font-medium
+
+    dark:text-myWhite
+}
+
+.stack-ctn p img {
+    @apply w-8 h-8
+}
+
 .projects {
     @apply w-[70%] h-fit flex flex-col gap-7 mb-[150px] mt-[120px]
 }
@@ -275,4 +297,13 @@ footer {
 
 .icon-ctn a img, .icon-ctn p img {
     @apply w-5 h-5
+}
+
+@keyframes slideToLeft {
+    from{
+        transform: translateX(0%);
+    }
+    to{
+        transform: translateX(-100%);
+    }
 }

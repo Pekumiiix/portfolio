@@ -673,15 +673,13 @@ header{
   flex-direction: column;
   align-items: center;
   border-bottom-width: 1px;
-  --tw-border-opacity: 1;
-  border-color: rgb(20 25 31 / var(--tw-border-opacity));
+  border-color: #14191F33;
   --tw-bg-opacity: 1;
   background-color: rgb(220 228 254 / var(--tw-bg-opacity));
 }
 
 :is(:where(.dark) header){
-  --tw-border-opacity: 1;
-  border-color: rgb(220 228 254 / var(--tw-border-opacity));
+  border-color: #DCE4FE33;
   --tw-bg-opacity: 1;
   background-color: rgb(20 25 31 / var(--tw-bg-opacity));
 }
@@ -693,13 +691,11 @@ nav{
   align-items: center;
   justify-content: space-between;
   border-bottom-width: 1px;
-  --tw-border-opacity: 1;
-  border-color: rgb(20 25 31 / var(--tw-border-opacity));
+  border-color: #14191F33;
 }
 
 :is(:where(.dark) nav){
-  --tw-border-opacity: 1;
-  border-color: rgb(220 228 254 / var(--tw-border-opacity));
+  border-color: #DCE4FE33;
   --tw-bg-opacity: 1;
   background-color: rgb(20 25 31 / var(--tw-bg-opacity));
 }
@@ -954,13 +950,11 @@ main{
   align-items: center;
   justify-content: center;
   border-bottom-width: 1px;
-  --tw-border-opacity: 1;
-  border-color: rgb(20 25 31 / var(--tw-border-opacity));
+  border-color: #14191F33;
 }
 
 :is(:where(.dark) main){
-  --tw-border-opacity: 1;
-  border-color: rgb(220 228 254 / var(--tw-border-opacity));
+  border-color: #DCE4FE33;
 }
 
 .tech-stacks{
@@ -970,19 +964,17 @@ main{
   overflow: hidden;
   white-space: nowrap;
   border-bottom-width: 1px;
-  --tw-border-opacity: 1;
-  border-color: rgb(20 25 31 / var(--tw-border-opacity));
+  border-color: #14191F33;
   padding-top: 2.25rem;
   padding-bottom: 2.25rem;
 }
 
 :is(:where(.dark) .tech-stacks){
-  --tw-border-opacity: 1;
-  border-color: rgb(220 228 254 / var(--tw-border-opacity));
+  border-color: #DCE4FE33;
 }
 
 .stack-ctn {
-  animation: slideToLeft 5s infinite linear;
+  animation: slideToLeft 9s infinite linear;
   display: inline-flex;
   height: -moz-fit-content;
   height: fit-content;
@@ -1193,13 +1185,11 @@ main{
   justify-content: center;
   gap: 1rem;
   border-bottom-width: 1px;
-  --tw-border-opacity: 1;
-  border-color: rgb(20 25 31 / var(--tw-border-opacity));
+  border-color: #14191F33;
 }
 
 :is(:where(.dark) .appreciation){
-  --tw-border-opacity: 1;
-  border-color: rgb(220 228 254 / var(--tw-border-opacity));
+  border-color: #DCE4FE33;
 }
 
 .appreciation-text{

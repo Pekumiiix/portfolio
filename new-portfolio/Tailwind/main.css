@@ -18,15 +18,15 @@ body {
 }
 
 header {
-    @apply h-[500px] w-[100%] flex flex-col items-center bg-myWhite border-b border-myBlack
+    @apply h-[500px] w-[100%] flex flex-col items-center bg-myWhite border-b border-[#14191F33]
 
-    dark:bg-myBlack dark:border-myWhite
+    dark:bg-myBlack dark:border-[#DCE4FE33]
 }
 
 nav {
-    @apply w-[100%] h-[80px] flex items-center justify-between border-b border-myBlack
+    @apply w-[100%] h-[80px] flex items-center justify-between border-b border-[#14191F33]
 
-    dark:bg-myBlack dark:border-myWhite
+    dark:bg-myBlack dark:border-[#DCE4FE33]
 }
 
 .nav-left, .nav-right {
@@ -140,19 +140,19 @@ nav {
 }
 
 main {
-    @apply flex flex-col items-center justify-center h-fit border-b border-myBlack
+    @apply flex flex-col items-center justify-center h-fit border-b border-[#14191F33]
 
-    dark:border-myWhite
+    dark:border-[#DCE4FE33]
 }
 
 .tech-stacks {
-    @apply w-[100%] h-fit py-9 border-b border-myBlack overflow-hidden whitespace-nowrap
+    @apply w-[100%] h-fit py-9 border-b border-[#14191F33] overflow-hidden whitespace-nowrap
 
-    dark:border-myWhite
+    dark:border-[#DCE4FE33]
 }
 
 .stack-ctn {
-    animation: slideToLeft 5s infinite linear;
+    animation: slideToLeft 9s infinite linear;
 
     @apply inline-flex h-fit pr-9
 }
@@ -254,9 +254,9 @@ main {
 }
 
 .appreciation {
-    @apply w-[100%] h-[400px] border-b border-myBlack flex flex-col justify-center gap-4
+    @apply w-[100%] h-[400px] border-b border-[#14191F33] flex flex-col justify-center gap-4
 
-    dark:border-myWhite
+    dark:border-[#DCE4FE33]
 }
 
 .appreciation-text {

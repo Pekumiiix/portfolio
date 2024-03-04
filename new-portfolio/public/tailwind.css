@@ -910,7 +910,7 @@ nav{
   line-height: 1.75rem;
 }
 
-.second-det-ctn button{
+.second-det-ctn button, .see-more{
   display: flex;
   width: -moz-fit-content;
   width: fit-content;
@@ -927,15 +927,15 @@ nav{
   color: rgb(220 228 254 / var(--tw-text-opacity));
 }
 
-.second-det-ctn button:hover{
+.second-det-ctn button:hover, .see-more:hover{
   opacity: 0.8;
 }
 
-.second-det-ctn button:active{
+.second-det-ctn button:active, .see-more:active{
   opacity: 0.8;
 }
 
-:is(:where(.dark) .second-det-ctn button){
+:is(:where(.dark) .second-det-ctn button),:is(:where(.dark)  .see-more){
   --tw-bg-opacity: 1;
   background-color: rgb(220 228 254 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
@@ -1062,6 +1062,7 @@ main{
 }
 
 .img-ctn img{
+  display: block;
   height: 60%;
   width: 90%;
 }
@@ -1089,7 +1090,7 @@ main{
   gap: 0.75rem;
 }
 
-.tag-ctn p, .link, .see-more, .github{
+.tag-ctn p, .link, .github{
   display: flex;
   cursor: default;
   align-items: center;
@@ -1106,23 +1107,32 @@ main{
   color: rgb(220 228 254 / var(--tw-text-opacity));
 }
 
-.tag-ctn p:hover, .link:hover, .see-more:hover, .github:hover{
+.tag-ctn p:hover, .link:hover, .github:hover{
   opacity: 0.7;
 }
 
 .html{
   --tw-bg-opacity: 1;
-  background-color: rgb(68 58 4 / var(--tw-bg-opacity));
+  background-color: rgb(227 76 38 / var(--tw-bg-opacity));
 }
 
 .css{
   --tw-bg-opacity: 1;
-  background-color: rgb(57 8 119 / var(--tw-bg-opacity));
+  background-color: rgb(38 77 100 / var(--tw-bg-opacity));
+}
+
+.bootstrap{
+  --tw-bg-opacity: 1;
+  background-color: rgb(85 60 123 / var(--tw-bg-opacity));
+}
+
+.tailwind{
+  --tw-bg-opacity: 1;
+  background-color: rgb(6 182 212 / var(--tw-bg-opacity));
 }
 
 .javascript{
-  --tw-bg-opacity: 1;
-  background-color: rgb(17 58 5 / var(--tw-bg-opacity));
+  background-color: #f7df1eB3;
 }
 
 .link{
@@ -1132,7 +1142,7 @@ main{
 
 .github{
   --tw-bg-opacity: 1;
-  background-color: rgb(51 65 85 / var(--tw-bg-opacity));
+  background-color: rgb(33 31 31 / var(--tw-bg-opacity));
 }
 
 .project-det-ctn{
@@ -1174,6 +1184,8 @@ main{
   background-color: rgb(126 34 206 / var(--tw-bg-opacity));
   font-size: 1rem;
   line-height: 1.5rem;
+  --tw-text-opacity: 1;
+  color: rgb(220 228 254 / var(--tw-text-opacity));
   text-decoration-line: none;
 }
 

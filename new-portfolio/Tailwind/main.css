@@ -131,7 +131,7 @@ nav {
     @apply text-lg leading-7 font-normal
 }
 
-.second-det-ctn button {
+.second-det-ctn button, .see-more {
     @apply bg-myBlack flex items-center justify-center p-3 rounded-xl w-fit text-base font-bold text-myWhite
 
     dark:bg-myWhite dark:text-myBlack
@@ -190,7 +190,7 @@ main {
 }
 
 .img-ctn img {
-    @apply w-[90%] h-[60%]
+    @apply block w-[90%] h-[60%]
 }
 
 .img-ctn .hello {
@@ -205,22 +205,30 @@ main {
     @apply w-fit h-fit flex gap-3 flex-wrap
 }
 
-.tag-ctn p, .link, .see-more, .github {
+.tag-ctn p, .link, .github {
     @apply px-3 py-[6px] flex items-center justify-center text-myWhite rounded text-xs font-semibold cursor-default
 
     hover:opacity-70
 }
 
 .html {
-    @apply bg-myBrown
+    @apply bg-[#e34c26]
 }
 
 .css {
-    @apply bg-myBlue
+    @apply bg-[#264d64]
+}
+
+.bootstrap {
+    @apply bg-[#553C7B]
+}
+
+.tailwind {
+    @apply bg-[#06b6d4]
 }
 
 .javascript {
-    @apply bg-myGreen
+    @apply bg-[#f7df1eB3]
 }
 
 .link {
@@ -228,7 +236,7 @@ main {
 }
 
 .github {
-    @apply bg-slate-700
+    @apply bg-[#211F1F]
 }
 
 .project-det-ctn {
@@ -250,7 +258,7 @@ main {
 }
 
 .see-more {
-    @apply bg-purple-700 w-fit no-underline text-base
+    @apply bg-purple-700 w-fit no-underline text-base text-myWhite
 }
 
 .appreciation {

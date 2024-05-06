@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 
 @media screen and (max-width: 1024px) {
   main .projects, body footer{
@@ -650,7 +650,7 @@ video {
 * {
   padding: 0;
   margin: 0;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 body{
@@ -700,7 +700,8 @@ nav{
   background-color: rgb(20 25 31 / var(--tw-bg-opacity));
 }
 
-.nav-left, .nav-right{
+.nav-left,
+.nav-right{
   margin-left: 1.25rem;
   display: flex;
   height: -moz-fit-content;
@@ -721,7 +722,11 @@ nav{
   width: 50px;
 }
 
-.nav-left p, .nav-right a, .nav-right p, .menu-btn, .light-md{
+.nav-left p,
+.nav-right a,
+.nav-right p,
+.menu-btn,
+.light-md{
   font-size: 1rem;
   font-weight: 700;
   line-height: 1.5rem;
@@ -730,7 +735,11 @@ nav{
   text-decoration-line: none;
 }
 
-:is(:where(.dark) .nav-left p),:is(:where(.dark)  .nav-right a),:is(:where(.dark)  .nav-right p),:is(:where(.dark)  .menu-btn),:is(:where(.dark)  .light-md){
+:is(:where(.dark) .nav-left p),:is(:where(.dark) 
+.nav-right a),:is(:where(.dark) 
+.nav-right p),:is(:where(.dark) 
+.menu-btn),:is(:where(.dark) 
+.light-md){
   --tw-text-opacity: 1;
   color: rgb(220 228 254 / var(--tw-text-opacity));
 }
@@ -740,7 +749,8 @@ nav{
   gap: 1.25rem;
 }
 
-.nav-right a, .nav-right p{
+.nav-right a,
+.nav-right p{
   display: flex;
   cursor: default;
   align-items: center;
@@ -748,7 +758,8 @@ nav{
   font-style: italic;
 }
 
-.nav-right a:hover, .nav-right p:hover{
+.nav-right a:hover,
+.nav-right p:hover{
   font-style: normal;
 }
 
@@ -782,7 +793,8 @@ nav{
   background-color: rgb(220 228 254 / var(--tw-bg-opacity));
 }
 
-.menu a, .menu p{
+.menu a,
+.menu p{
   display: flex;
   width: 90%;
   cursor: default;
@@ -798,19 +810,22 @@ nav{
   text-decoration-line: none;
 }
 
-.menu a:active, .menu p:active{
+.menu a:active,
+.menu p:active{
   border-width: 1px;
   --tw-border-opacity: 1;
   border-color: rgb(220 228 254 / var(--tw-border-opacity));
   opacity: 0.8;
 }
 
-:is(:where(.dark) .menu a),:is(:where(.dark)  .menu p){
+:is(:where(.dark) .menu a),:is(:where(.dark) 
+.menu p){
   --tw-text-opacity: 1;
   color: rgb(20 25 31 / var(--tw-text-opacity));
 }
 
-:is(:where(.dark) .menu a:active),:is(:where(.dark)  .menu p:active){
+:is(:where(.dark) .menu a:active),:is(:where(.dark) 
+.menu p:active){
   --tw-border-opacity: 1;
   border-color: rgb(220 228 254 / var(--tw-border-opacity));
 }
@@ -836,7 +851,8 @@ nav{
   gap: 70px;
 }
 
-.first-det-ctn, .second-det-ctn{
+.first-det-ctn,
+.second-det-ctn{
   display: flex;
   height: -moz-fit-content;
   height: fit-content;
@@ -848,14 +864,16 @@ nav{
   width: 35%;
 }
 
-.first-det-ctn p, .second-det-ctn p{
+.first-det-ctn p,
+.second-det-ctn p{
   width: -moz-fit-content;
   width: fit-content;
   --tw-text-opacity: 1;
   color: rgb(20 25 31 / var(--tw-text-opacity));
 }
 
-:is(:where(.dark) .first-det-ctn p),:is(:where(.dark)  .second-det-ctn p){
+:is(:where(.dark) .first-det-ctn p),:is(:where(.dark) 
+.second-det-ctn p){
   --tw-text-opacity: 1;
   color: rgb(220 228 254 / var(--tw-text-opacity));
 }
@@ -910,7 +928,8 @@ nav{
   line-height: 1.75rem;
 }
 
-.second-det-ctn button, .see-more{
+.second-det-ctn button,
+.see-more{
   display: flex;
   width: -moz-fit-content;
   width: fit-content;
@@ -927,15 +946,18 @@ nav{
   color: rgb(220 228 254 / var(--tw-text-opacity));
 }
 
-.second-det-ctn button:hover, .see-more:hover{
+.second-det-ctn button:hover,
+.see-more:hover{
   opacity: 0.8;
 }
 
-.second-det-ctn button:active, .see-more:active{
+.second-det-ctn button:active,
+.see-more:active{
   opacity: 0.8;
 }
 
-:is(:where(.dark) .second-det-ctn button),:is(:where(.dark)  .see-more){
+:is(:where(.dark) .second-det-ctn button),:is(:where(.dark) 
+.see-more){
   --tw-bg-opacity: 1;
   background-color: rgb(220 228 254 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
@@ -978,7 +1000,7 @@ main{
   display: inline-flex;
   height: -moz-fit-content;
   height: fit-content;
-  padding-right: 2.25rem
+  padding-right: 2.25rem;
 }
 
 .stack-ctn p{
@@ -1090,7 +1112,9 @@ main{
   gap: 0.75rem;
 }
 
-.tag-ctn p, .link, .github{
+.tag-ctn p,
+.link,
+.github{
   display: flex;
   cursor: default;
   align-items: center;
@@ -1107,7 +1131,9 @@ main{
   color: rgb(220 228 254 / var(--tw-text-opacity));
 }
 
-.tag-ctn p:hover, .link:hover, .github:hover{
+.tag-ctn p:hover,
+.link:hover,
+.github:hover{
   opacity: 0.7;
 }
 
@@ -1133,6 +1159,11 @@ main{
 
 .javascript{
   background-color: #f7df1eB3;
+}
+
+.react{
+  --tw-bg-opacity: 1;
+  background-color: rgb(1 127 165 / var(--tw-bg-opacity));
 }
 
 .link{
@@ -1239,7 +1270,8 @@ main{
   color: rgb(220 228 254 / var(--tw-text-opacity));
 }
 
-.link-ctn a, .link-ctn p{
+.link-ctn a,
+.link-ctn p{
   display: flex;
   cursor: default;
   align-items: center;
@@ -1249,7 +1281,8 @@ main{
   text-decoration-line: none;
 }
 
-.link-ctn a:hover, .link-ctn p:hover{
+.link-ctn a:hover,
+.link-ctn p:hover{
   font-style: normal;
 }
 
@@ -1280,7 +1313,8 @@ footer{
   gap: 0.75rem;
 }
 
-.icon-ctn a, .icon-ctn p{
+.icon-ctn a,
+.icon-ctn p{
   display: flex;
   cursor: default;
   align-items: center;
@@ -1290,17 +1324,18 @@ footer{
   padding: 0.5rem;
 }
 
-.icon-ctn a img, .icon-ctn p img{
+.icon-ctn a img,
+.icon-ctn p img{
   height: 1.25rem;
   width: 1.25rem;
 }
 
 @keyframes slideToLeft {
-  from{
+  from {
     transform: translateX(0%);
   }
 
-  to{
+  to {
     transform: translateX(-100%);
   }
 }

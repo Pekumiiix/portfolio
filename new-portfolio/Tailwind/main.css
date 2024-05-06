@@ -1,317 +1,336 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
-@import './media.css';
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import "./media.css";
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 * {
-    padding: 0;
-    margin: 0;
-    font-family: 'Raleway', sans-serif;
+  padding: 0;
+  margin: 0;
+  font-family: "Raleway", sans-serif;
 }
 
 body {
-    @apply bg-myWhite transition-all
+  @apply bg-myWhite transition-all
 
-    dark:bg-myBlack
+    dark:bg-myBlack;
 }
 
 header {
-    @apply h-[500px] w-[100%] flex flex-col items-center bg-myWhite border-b border-[#14191F33]
+  @apply h-[500px] w-[100%] flex flex-col items-center bg-myWhite border-b border-[#14191F33]
 
-    dark:bg-myBlack dark:border-[#DCE4FE33]
+    dark:bg-myBlack dark:border-[#DCE4FE33];
 }
 
 nav {
-    @apply w-[100%] h-[80px] flex items-center justify-between border-b border-[#14191F33]
+  @apply w-[100%] h-[80px] flex items-center justify-between border-b border-[#14191F33]
 
-    dark:bg-myBlack dark:border-[#DCE4FE33]
+    dark:bg-myBlack dark:border-[#DCE4FE33];
 }
 
-.nav-left, .nav-right {
-    @apply flex items-center w-fit h-fit ml-5 gap-2
+.nav-left,
+.nav-right {
+  @apply flex items-center w-fit h-fit ml-5 gap-2;
 }
 
 .nav-left {
-    @apply ml-5 gap-2
+  @apply ml-5 gap-2;
 }
 
 .nav-left img {
-    @apply w-[50px] h-[50px]
+  @apply w-[50px] h-[50px];
 }
 
-.nav-left p, .nav-right a, .nav-right p, .menu-btn, .light-md {
-    @apply text-myBlack font-bold text-base leading-6 no-underline 
+.nav-left p,
+.nav-right a,
+.nav-right p,
+.menu-btn,
+.light-md {
+  @apply text-myBlack font-bold text-base leading-6 no-underline 
 
-    dark:text-myWhite
+    dark:text-myWhite;
 }
 
 .nav-right {
-    @apply gap-5 mr-5
+  @apply gap-5 mr-5;
 }
 
-.nav-right a, .nav-right p {
-    @apply italic flex items-center gap-2 cursor-default
+.nav-right a,
+.nav-right p {
+  @apply italic flex items-center gap-2 cursor-default
 
-    hover:not-italic
+    hover:not-italic;
 }
 
 .nav-right .dark-md {
-    @apply hidden
+  @apply hidden;
 }
 
 .nav-right .menu-btn {
-    @apply hidden
+  @apply hidden;
 }
 
 .menu {
-    @apply hidden mr-5 mt-[90px] w-[70%] h-fit flex-col gap-2 items-center absolute right-0 rounded-lg bg-myBlack
+  @apply hidden mr-5 mt-[90px] w-[70%] h-fit flex-col gap-2 items-center absolute right-0 rounded-lg bg-myBlack
 
-    dark:bg-myWhite
+    dark:bg-myWhite;
 }
 
-.menu a, .menu p {
-    @apply flex items-center gap-2 cursor-default w-[90%] p-[5px] rounded-md
+.menu a,
+.menu p {
+  @apply flex items-center gap-2 cursor-default w-[90%] p-[5px] rounded-md
 
    text-myWhite font-bold text-base leading-6 no-underline 
 
    active:opacity-80 active:border active:border-myWhite
 
- dark:text-myBlack dark:active:border-myWhite
+ dark:text-myBlack dark:active:border-myWhite;
 }
 
 .keep {
-    @apply hidden
+  @apply hidden;
 }
 
 .show {
-    @apply flex
+  @apply flex;
 }
 
 .details-ctn {
-    @apply flex flex-wrap w-fit h-fit gap-[70px] items-center justify-center mt-[100px]
+  @apply flex flex-wrap w-fit h-fit gap-[70px] items-center justify-center mt-[100px];
 }
 
-.first-det-ctn, .second-det-ctn {
-    @apply flex flex-col h-fit gap-3
+.first-det-ctn,
+.second-det-ctn {
+  @apply flex flex-col h-fit gap-3;
 }
 
 .first-det-ctn {
-    @apply w-[35%]
+  @apply w-[35%];
 }
 
-.first-det-ctn p, .second-det-ctn p {
-    @apply text-myBlack w-fit
+.first-det-ctn p,
+.second-det-ctn p {
+  @apply text-myBlack w-fit
 
-    dark:text-myWhite
+    dark:text-myWhite;
 }
 
 .work-status {
-    @apply font-bold text-base flex items-center gap-2
+  @apply font-bold text-base flex items-center gap-2;
 }
 
 .work-status span {
-    @apply bg-darkGreen h-3 w-3 rounded-[50%] animate-ping
+  @apply bg-darkGreen h-3 w-3 rounded-[50%] animate-ping;
 }
 
 .greetings {
-    @apply font-bold text-2xl
+  @apply font-bold text-2xl;
 }
 
 .my-job {
-    @apply text-xl font-medium leading-8
+  @apply text-xl font-medium leading-8;
 }
 
 .second-det-ctn {
-    @apply w-[40%]
+  @apply w-[40%];
 }
 
 .experience {
-    @apply text-lg leading-7 font-normal
+  @apply text-lg leading-7 font-normal;
 }
 
-.second-det-ctn button, .see-more {
-    @apply bg-myBlack flex items-center justify-center p-3 rounded-xl w-fit text-base font-bold text-myWhite
+.second-det-ctn button,
+.see-more {
+  @apply bg-myBlack flex items-center justify-center p-3 rounded-xl w-fit text-base font-bold text-myWhite
 
     dark:bg-myWhite dark:text-myBlack
 
-    hover:opacity-80 active:opacity-80
+    hover:opacity-80 active:opacity-80;
 }
 
 main {
-    @apply flex flex-col items-center justify-center h-fit border-b border-[#14191F33]
+  @apply flex flex-col items-center justify-center h-fit border-b border-[#14191F33]
 
-    dark:border-[#DCE4FE33]
+    dark:border-[#DCE4FE33];
 }
 
 .tech-stacks {
-    @apply w-[100%] h-fit py-9 border-b border-[#14191F33] overflow-hidden whitespace-nowrap
+  @apply w-[100%] h-fit py-9 border-b border-[#14191F33] overflow-hidden whitespace-nowrap
 
-    dark:border-[#DCE4FE33]
+    dark:border-[#DCE4FE33];
 }
 
 .stack-ctn {
-    animation: slideToLeft 9s infinite linear;
+  animation: slideToLeft 9s infinite linear;
 
-    @apply inline-flex h-fit pr-9
+  @apply inline-flex h-fit pr-9;
 }
 
 .stack-ctn p {
-    @apply w-fit flex items-center mr-24 gap-2 text-myBlack text-3xl font-medium
+  @apply w-fit flex items-center mr-24 gap-2 text-myBlack text-3xl font-medium
 
-    dark:text-myWhite
+    dark:text-myWhite;
 }
 
 .stack-ctn p img {
-    @apply w-8 h-8
+  @apply w-8 h-8;
 }
 
 .projects {
-    @apply w-[70%] h-fit flex flex-col gap-7 mb-[150px] mt-[120px]
+  @apply w-[70%] h-fit flex flex-col gap-7 mb-[150px] mt-[120px];
 }
 
 .project-headline {
-    @apply w-fit h-fit text-3xl text-myBlack font-bold
+  @apply w-fit h-fit text-3xl text-myBlack font-bold
 
-    dark:text-myWhite
+    dark:text-myWhite;
 }
 
 .project-card-ctn {
-    @apply flex flex-wrap gap-[4%] w-[100%] h-[fit]
+  @apply flex flex-wrap gap-[4%] w-[100%] h-[fit];
 }
 
 .project-card {
-    @apply w-[48%] h-fit flex flex-col relative gap-4
+  @apply w-[48%] h-fit flex flex-col relative gap-4;
 }
 
 .img-ctn {
-    @apply w-[100%] h-[375px] flex items-center justify-center bg-myPurple
+  @apply w-[100%] h-[375px] flex items-center justify-center bg-myPurple;
 }
 
 .img-ctn img {
-    @apply block w-[90%] h-[60%]
+  @apply block w-[90%] h-[60%];
 }
 
 .img-ctn .hello {
-    @apply h-auto
+  @apply h-auto;
 }
 
 .card-det-ctn {
-    @apply w-[100%] flex flex-col h-fit gap-5
+  @apply w-[100%] flex flex-col h-fit gap-5;
 }
 
 .tag-ctn {
-    @apply w-fit h-fit flex gap-3 flex-wrap
+  @apply w-fit h-fit flex gap-3 flex-wrap;
 }
 
-.tag-ctn p, .link, .github {
-    @apply px-3 py-[6px] flex items-center justify-center text-myWhite rounded text-xs font-semibold cursor-default
+.tag-ctn p,
+.link,
+.github {
+  @apply px-3 py-[6px] flex items-center justify-center text-myWhite rounded text-xs font-semibold cursor-default
 
-    hover:opacity-70
+    hover:opacity-70;
 }
 
 .html {
-    @apply bg-[#e34c26]
+  @apply bg-[#e34c26];
 }
 
 .css {
-    @apply bg-[#264d64]
+  @apply bg-[#264d64];
 }
 
 .bootstrap {
-    @apply bg-[#553C7B]
+  @apply bg-[#553C7B];
 }
 
 .tailwind {
-    @apply bg-[#06b6d4]
+  @apply bg-[#06b6d4];
 }
 
 .javascript {
-    @apply bg-[#f7df1eB3]
+  @apply bg-[#f7df1eB3];
+}
+
+.react {
+  @apply bg-[#017FA5];
 }
 
 .link {
-    @apply bg-blue-600
+  @apply bg-blue-600;
 }
 
 .github {
-    @apply bg-[#211F1F]
+  @apply bg-[#211F1F];
 }
 
 .project-det-ctn {
-    @apply w-[100%] flex flex-col gap-2
+  @apply w-[100%] flex flex-col gap-2;
 }
 
 .project-det-ctn p {
-    @apply text-myBlack
+  @apply text-myBlack
 
-    dark:text-myWhite
+    dark:text-myWhite;
 }
 
 .project-name {
-    @apply text-xl font-bold 
+  @apply text-xl font-bold;
 }
 
 .project-description {
-    @apply w-[100%] h-fit text-base leading-6 opacity-80
+  @apply w-[100%] h-fit text-base leading-6 opacity-80;
 }
 
 .see-more {
-    @apply bg-purple-700 w-fit no-underline text-base text-myWhite
+  @apply bg-purple-700 w-fit no-underline text-base text-myWhite;
 }
 
 .appreciation {
-    @apply w-[100%] h-[400px] border-b border-[#14191F33] flex flex-col justify-center gap-4
+  @apply w-[100%] h-[400px] border-b border-[#14191F33] flex flex-col justify-center gap-4
 
-    dark:border-[#DCE4FE33]
+    dark:border-[#DCE4FE33];
 }
 
 .appreciation-text {
-    @apply w-[70%] h-fit text-myBlack text-3xl font-bold leading-[50px] ml-[15%]
+  @apply w-[70%] h-fit text-myBlack text-3xl font-bold leading-[50px] ml-[15%]
 
-    dark:text-myWhite
+    dark:text-myWhite;
 }
 
 .link-ctn {
-    @apply h-fit w-fit gap-8 flex text-myBlack ml-[15%]
+  @apply h-fit w-fit gap-8 flex text-myBlack ml-[15%]
 
-    dark:text-myWhite
+    dark:text-myWhite;
 }
 
-.link-ctn a, .link-ctn p {
-    @apply no-underline italic font-semibold flex gap-2 items-center cursor-default
+.link-ctn a,
+.link-ctn p {
+  @apply no-underline italic font-semibold flex gap-2 items-center cursor-default
 
-    hover:not-italic
+    hover:not-italic;
 }
 
 footer {
-    @apply w-[70%] items-center flex justify-between h-[90px] ml-[15%]
+  @apply w-[70%] items-center flex justify-between h-[90px] ml-[15%];
 }
 
 .footer-left {
-    @apply text-myBlack text-sm leading-6
+  @apply text-myBlack text-sm leading-6
 
-    dark:text-myWhite
+    dark:text-myWhite;
 }
 
 .icon-ctn {
-    @apply flex items-center gap-3
+  @apply flex items-center gap-3;
 }
 
-.icon-ctn a, .icon-ctn p {
-    @apply p-2 bg-myBlack items-center flex rounded-[50%] cursor-default
+.icon-ctn a,
+.icon-ctn p {
+  @apply p-2 bg-myBlack items-center flex rounded-[50%] cursor-default;
 }
 
-.icon-ctn a img, .icon-ctn p img {
-    @apply w-5 h-5
+.icon-ctn a img,
+.icon-ctn p img {
+  @apply w-5 h-5;
 }
 
 @keyframes slideToLeft {
-    from{
-        transform: translateX(0%);
-    }
-    to{
-        transform: translateX(-100%);
-    }
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
 }
